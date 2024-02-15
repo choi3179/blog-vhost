@@ -8,7 +8,6 @@ RUN apt install -y cron
 RUN rm -rf /var/www/html
 RUN git clone https://github.com/choi3179/choi3179.github.io.git /var/www/html
 
-COPY pull.sh /var/www/
 COPY blog-pull-cronjob /etc/cron.d
 
 RUN crontab /etc/cron.d/blog-pull-cronjob
