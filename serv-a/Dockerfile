@@ -6,7 +6,7 @@ RUN apt install -y git
 RUN apt install -y cron
 
 RUN rm -rf /var/www/html
-RUN git clone https://github.com/choi3179/choi3179.github.io.git /var/www/html
+RUN git clone --branch blog-A https://github.com/choi3179/choi3179.github.io.git /var/www/html
 
 COPY blog-pull-cronjob /etc/cron.d
 
