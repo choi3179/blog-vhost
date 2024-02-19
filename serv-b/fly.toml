@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for choi3179-blog-serv-b on 2024-02-16T00:13:11+09:00
+# fly.toml app configuration file generated for choi3179-blog-serv-b on 2024-02-19T11:00:32+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -11,8 +11,8 @@ primary_region = 'nrt'
 [http_service]
   internal_port = 80
   force_https = true
-  auto_stop_machines = true
-  auto_start_machines = true
+  auto_stop_machines = false
+  auto_start_machines = false
   min_machines_running = 0
   processes = ['app']
 
