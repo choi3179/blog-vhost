@@ -1,4 +1,4 @@
-version: '3.8'
+version: '4'
 name: awsgoo
 services:
   nginx-proxy:
@@ -12,7 +12,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.10'
+          cpus: '0.20'
           memory: 100M
         reservations:
           cpus: '0.05'
@@ -23,7 +23,7 @@ services:
     image: choi3179/blog-a
     deploy:
       mode: replicated
-      replicas: 1 # https://docs.docker.com/compose/compose-file/deploy/#replicas
+      replicas: 10 # https://docs.docker.com/compose/compose-file/deploy/#replicas
       resources: # https://docs.docker.com/compose/compose-file/compose-file-v3/#resources
         limits:
           cpus: '0.05'
