@@ -20,3 +20,9 @@ $ docker push choi3179/blog-b:0.1.0
 ```bash
 $ docker compose -f compose/auto_lb/compose.yml  up -d --build --force-recreate
 ```
+### manual script
+```
+$ chmod +x ./manual-compose.sh
+$ sh ./manual-compose.sh
+
+```
