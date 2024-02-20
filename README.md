@@ -37,3 +37,10 @@ done
 ```
 $ sh docker-stats.sh
 ```
+
+### manual script
+```
+$ chmod +x ./manual-compose.sh
+$ sh ./manual-compose.sh
+
+```
